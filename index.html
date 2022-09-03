@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TO-DO</title>
+</head>
+
+<body>
+    <h1>Daily To-Do list manager</h1>
+    <div class="todo--board">
+        <div class="date--container">
+            <div class="day">Vasárnap</div>
+            <div class="date">2022.09.04.</div>
+        </div>
+
+        <div class="input--container">
+            <input class="input" type="text" placeholder="Take the garbage out ... ">
+            <div class="addBtn">
+                <i class="fa fa-plus-square"></i>
+            </div>
+
+        </div>
+        <div class="pending hide">
+            <h3 class="pending--text">You have 2 pendigs items</h3>
+            <div class="pending--container">
+                <input type="checkbox">
+                <p>Első feladat</p>
+            </div>
+            <div class="pending--container">
+                <input type="checkbox">
+                <p>Második feladat</p>
+            </div>
+        </div>
+
+        <div class="complate hide">
+            <h3 class="complate--text">Completed tasks: 50%</h3>
+            <div class="complate--container">
+                <input type="checkbox" readonly checked>
+                <p>Első feladat</p>
+            </div>
+            <div class="complate--container">
+                <input type="checkbox" readonly checked>
+                <p>Második feladat</p>
+            </div>
+        </div>
+
+        <div class="empty ">
+            <img src="jpg/empty.png" alt="empty" style="width:50px">
+            <h3 class="complate--text">Time to chili! You have no todos.</h3>
+        </div>
+
+        <div class="buttons">
+            <div class="btn showBtn hide">Show complete</div>
+            <div class="btn hideBtn hide">Hide complete</div>
+            <div class="btn clearBtn hide">Clear All</div>
+        </div>
+
+
+    </div>
+
+</body>
+<script type="module" src="js/main.js"></script>
+
+</html>

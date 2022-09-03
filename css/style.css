@@ -1,0 +1,140 @@
+body {
+    background-color: lightskyblue;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+/* lista felülete */
+.todo--board {
+    margin: 10px auto;
+    width: 400px;
+    min-height: 600px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* dátum */
+.date--container {
+    margin: 20px 0px;
+    font-size: 28px;
+    color: red;
+}
+
+/* input mező */
+.input--container {
+    display: flex;
+    justify-content: right;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input {
+    flex: 1;
+}
+
+::-webkit-input-placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+.addBtn {
+    font-size: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: gray;
+}
+
+.addBtn:hover {
+    color: black;
+}
+
+.addBtn:active {
+    color: red;
+}
+
+
+/* feladatlista */
+.pending--container {
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;
+    margin: 5px 0px;
+}
+
+input:checked+p {
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    margin: 10px;
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* elvégzett feladat */
+.complate--container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 5px 0px;
+}
+
+input[type="checkbox"][readonly] {
+    pointer-events: none;
+    background-color: white;
+}
+
+/* nincs feladat */
+.empty {
+    margin: 40px 0px;
+    display: block;
+    text-align: center;
+}
+
+
+/* alsó gombok */
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+
+.btn {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 2px #999;
+}
+
+.btn:hover {
+    background-color: gainsboro;
+}
+
+.btn:active {
+    background-color: lightcyan;
+}
+
+
+
+
+
+.hide {
+    /* visibility: hidden; */
+    display: none;
+}
