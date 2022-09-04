@@ -28,25 +28,29 @@
         </div>
         <div class="pending hide">
             <h3 class="pending--text">You have 2 pendigs items</h3>
-            <div class="pending--container">
-                <input type="checkbox">
-                <p>Első feladat</p>
-            </div>
-            <div class="pending--container">
-                <input type="checkbox">
-                <p>Második feladat</p>
+            <div class="pending--wrap">
+                <div class="pending--container">
+                    <input type="checkbox" data-index=0>
+                    <p>Első feladat</p>
+                </div>
+                <div class="pending--container">
+                    <input type="checkbox" data-index=1>
+                    <p>Második feladat</p>
+                </div>
             </div>
         </div>
 
         <div class="complate hide">
             <h3 class="complate--text">Completed tasks: 50%</h3>
-            <div class="complate--container">
-                <input type="checkbox" readonly checked>
-                <p>Első feladat</p>
-            </div>
-            <div class="complate--container">
-                <input type="checkbox" readonly checked>
-                <p>Második feladat</p>
+            <div class="complate--wrap">
+                <div class="complate--container">
+                    <input type="checkbox" readonly checked>
+                    <p>Első feladat</p>
+                </div>
+                <div class="complate--container">
+                    <input type="checkbox" readonly checked>
+                    <p>Második feladat</p>
+                </div>
             </div>
         </div>
 
@@ -56,9 +60,9 @@
         </div>
 
         <div class="buttons">
-            <div class="btn showBtn hide">Show complete</div>
-            <div class="btn hideBtn hide">Hide complete</div>
-            <div class="btn clearBtn hide">Clear All</div>
+            <div class="btn showBtn">Show complete</div>
+            <div class="btn hideBtn">Hide complete</div>
+            <div class="btn clearBtn ">Clear All</div>
         </div>
 
 

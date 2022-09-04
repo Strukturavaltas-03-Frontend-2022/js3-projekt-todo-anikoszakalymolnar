@@ -79,6 +79,7 @@ p {
     margin: 0;
     padding: 10px;
     font-size: 15px;
+    word-break: break-all;
 }
 
 /* elvégzett feladat */
@@ -129,10 +130,6 @@ input[type="checkbox"][readonly] {
 .btn:active {
     background-color: lightcyan;
 }
-
-
-
-
 
 .hide {
     /* visibility: hidden; */
